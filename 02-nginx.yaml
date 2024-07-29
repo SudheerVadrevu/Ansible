@@ -1,0 +1,13 @@
+- name: nginx ni install chesthunam
+  hosts: linuxserver
+  become: yes  # This means giving root access equal to -b in adhoc commands
+  tasks:
+  - name: install nginx
+    ansible.builtin.dnf:
+      name: ngnix
+      state: latest
+  - name: start nginx
+    ansible.builtin.service:
+      name: ngnix
+      state: started
+      enable: yes
