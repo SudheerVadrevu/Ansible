@@ -2,4 +2,4 @@
   hosts: sexysindhu
   tasks: 
   - name: ping the server
-    ansible.built.in.ping:
+    ansible.builtin.ping:
