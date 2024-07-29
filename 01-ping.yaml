@@ -1,5 +1,5 @@
 - name: start the server
-  sex: sexysindhu
+  hosts: sexysindhu
   tasks: 
   - name: ping the server
     ansible.built.in.ping:
