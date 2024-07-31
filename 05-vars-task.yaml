@@ -10,6 +10,7 @@
       occupation: NotWorking
     ansible.builtin.debug:
       msg: "the sudheer is {{sudheer}} about vinni {{wastegirl}} and both doing {{occupation}}"
+      
   - name: Inherit
-    ansible.builtin.debud:
+    ansible.builtin.debug:
       msg: "the sudheer is {{sudheer}} about vinni {{wastegirl}} and both doing {{occupation}}"
