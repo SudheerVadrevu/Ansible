@@ -2,6 +2,10 @@
   hosts: linuxserver
   vars:
     firstvariable: "this is an string"
+    list: "this how list looks"
+      - variable
+      - sudheer
+      - dhruva
     secondvariable:
       sudheer: wasteboy
       surya: worstboy
