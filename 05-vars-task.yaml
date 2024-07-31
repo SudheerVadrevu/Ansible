@@ -6,7 +6,7 @@
     occupation: Software engineer
   tasks:
   - name: vars emi vasthayo chudam
-     vars:
+    vars:
       occupation: NotWorking
     ansible.builtin.debug:
       msg: "the sudheer is {{sudheer}} about vinni {{wastegirl}} and both doing {{occupation}}"
