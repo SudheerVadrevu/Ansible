@@ -14,4 +14,4 @@
   tasks:
   - name: Ippudu chudam
     ansible.builtin.debug:
-      msg: "mundhu first string {{firstvariable}} then it will be {{secondvariable}} if it is in{{thirdvariable}}"
+      msg: "mundhu first string {{firstvariable}} then list {{list}} then {{secondvariable}} if it is in{{thirdvariable}}"
