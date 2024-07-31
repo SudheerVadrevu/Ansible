@@ -1,7 +1,7 @@
 - name: variables ni files lo ala istham anedhi chudam
   hosts: linuxserver
   vars_files:
-    var-files.yaml
+    vars.yaml
   tasks:
   - name: chudam ala execute avutundho
     ansible.builtin.debug:
