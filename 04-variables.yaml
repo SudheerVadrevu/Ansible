@@ -1,5 +1,5 @@
 - name: variables
-  hosts: linuxservers
+  hosts: linuxserver
   vars:
     sudheer: pichi
     vinni: pichikhanna
