@@ -9,5 +9,5 @@
     thirdvariable: True
   tasks:
   - name: Ippudu chudam
-  ansible.builtin.debug:
-    msg: "mundhu first string {{firstvariable}} then it will be {{secondvariable}} if it is in{{thirdvariable}}"
+    ansible.builtin.debug:
+      msg: "mundhu first string {{firstvariable}} then it will be {{secondvariable}} if it is in{{thirdvariable}}"
