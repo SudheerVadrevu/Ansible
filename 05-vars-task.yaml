@@ -9,8 +9,8 @@
     vars:
       occupation: "NotWorking"
     ansible.builtin.debug:
-      msg: "the sudheer is {{sudheer}} about vinni {{wastegirl}} and both doing {{occupation}}"
+      msg: "the sudheer is {{sudheer}} about vinni {{vinni}} and both doing {{occupation}}"
 
   - name: Inherit
     ansible.builtin.debug:
-      msg: "the sudheer is {{sudheer}} about vinni {{wastegirl}} and both doing {{occupation}}"
+      msg: "the sudheer is {{sudheer}} about vinni {{vinni}} and both doing {{occupation}}"
