@@ -1,0 +1,15 @@
+- name: give the variables in task level
+  hosts: linuxserver
+  vars:
+    sudheer: "goodboy ra sudheer "
+    vinni: wastegirl
+    occupation: Software engineer
+  tasks:
+  - name: vars emi vasthayo chudam
+     vars:
+      occupation: NotWorking
+    ansible.builtin.debug:
+      msg: "the sudheer is {{sudheer}} about vinni {{wastegirl}} and both doing {{occupation}}"
+  - name: Inherit
+    ansible.builtin.debud:
+      msg: "the sudheer is {{sudheer}} about vinni {{wastegirl}} and both doing {{occupation}}"
