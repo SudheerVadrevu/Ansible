@@ -1,0 +1,6 @@
+- name: indulo inventory ala ivalo chudam
+  hosts: sudheerserver
+  tasks:
+  - name: sudheer server lo ichina perulu chepu
+    ansible.builtin.debug:
+      msg: "lets see what you give for {{sudheer}} and {{vineela}} and {{others}}"
