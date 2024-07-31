@@ -2,5 +2,5 @@
   hosts: linuxserver
   tasks:
   - name: "args ni runtime lo use chedam anukuntunanu"
-  ansible.builtin.debug:
-    msg: "I want to give in the runtime these {{sudheer}} and {{vineela}}"
+    ansible.builtin.debug:
+      msg: "I want to give in the runtime these {{sudheer}} and {{vineela}}"
