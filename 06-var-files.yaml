@@ -3,6 +3,6 @@
   vars_files:
     var-files.yaml
   tasks:
-  -name: chudam ala execute avutundho
-   ansible.builtin.debug:
-    msg: "sudheer is a {{sudheer}} and vineela is a {{vineela}} and work enti:{{pani}} "
+  - name: chudam ala execute avutundho
+    ansible.builtin.debug:
+      msg: "sudheer is a {{sudheer}} and vineela is a {{vineela}} and work enti:{{pani}} "
