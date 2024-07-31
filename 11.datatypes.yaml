@@ -7,5 +7,5 @@
       surya: worstboy
       ravi: "deniki paniki rani vadu"
     thirdvariable: True
-  ansible.builtin.debug:
-    msg: "mundhu first string {{firstvariable}} then it will be {{secondvariable}} if it is in{{thirdvariable}}"
+    ansible.builtin.debug:
+      msg: "mundhu first string {{firstvariable}} then it will be {{secondvariable}} if it is in{{thirdvariable}}"
