@@ -9,5 +9,5 @@
     private: True
   tasks:
   - name: Ichina tasks ni execute cheyi
-    anisible.builtin.debug:
+    ansible.builtin.debug:
      msg: "this was the user name i have given {{USERNAME}} and Password:{{PASSWORD}}"
