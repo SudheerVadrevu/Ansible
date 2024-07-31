@@ -1,6 +1,6 @@
 - name: Ippudu prompt ala rayalo chudam
   hosts: linuxserver
-vars_prompt:
+  vars_prompt:
 - name: USERNAME
   prompt: Please enter the username
   private: false
