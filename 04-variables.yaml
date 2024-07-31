@@ -7,4 +7,4 @@
   tasks:
   - name: play-1
     ansible.builtin.debug:
-      msg: "This {{sudheer}} scolding {{vinni}} after grandfather{{grandfather}}"
+      msg: "This {{sudheer}} scolding {{vinni}} after grandfather {{grandfather}}"
