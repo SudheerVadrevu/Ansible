@@ -1,0 +1,8 @@
+- name: variables ni files lo ala istham anedhi chudam
+  hosts: linuxserver
+  vars_files:
+    var-files.yaml
+  tasks:
+  -name: chudam ala execute avutundho
+   ansible.builtin.debug:
+    msg: "sudheer is a {{sudheer}} and vineela is a {{vineela}} and work enti:{{pani}} "
