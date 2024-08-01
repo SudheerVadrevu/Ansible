@@ -4,7 +4,7 @@
   tasks:
   - name: ichina name ni ikkada ivali
     ansible.builtin.command: useradd expense
-    ignore_error: True
+    ignore_error: true
   
   - name: Say Hello
     ansible.builtin.debug:
