@@ -1,15 +1,16 @@
-- name: give the variables man
+- name: play-level variable
   hosts: linuxserver
   vars:
-    sudheer: okavadhava
-    vinni: oka mallokam
-    ravi: waste vedhava
-
+    animal: doggie
+    icecream: vennela
+    swiggy: onlinefoodorder
   tasks:
-    - name: see the values for given in vars
+    - name: task lo iche variable ivi
+      vars:
+        icecream: chocobar
       ansible.builtin.debug:
-        msg: "the {{sudheer}} and {{vinni}} kalisi {{ravi}} gadi dagaraki vellaru"
-        
-    
+        msg: "this is the one we want in chocobar {{icecream}}"
 
-
+    - name: ikkada manaki play-level variable vasthayi
+      ansible.builtin.debug:
+        msg: "this is the style i want in sex {{animal}} after sex i want {{icecream}} in {{swiggy}}"
