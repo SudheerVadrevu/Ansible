@@ -1,6 +1,6 @@
 - name: variablenames
   hosts: linuxserver
-  vars_file:
+  vars_files:
     - unnessaryvariables.yaml
   tasks:
     - name: emi emi varibles call ayayo chudam
