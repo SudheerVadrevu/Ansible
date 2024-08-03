@@ -1,16 +1,8 @@
-- name: play-level variable
+- name: variablenames
   hosts: linuxserver
-  vars:
-    animal: doggie
-    icecream: vennela
-    swiggy: onlinefoodorder
+  vars_file:
+    - unnessaryvariables.yaml
   tasks:
-    - name: task lo iche variable ivi
-      vars:
-        icecream: chocobar
+    - name: emi emi varibles call ayayo chudam
       ansible.builtin.debug:
-        msg: "this is the one we want in chocobar {{icecream}}"
-
-    - name: ikkada manaki play-level variable vasthayi
-      ansible.builtin.debug:
-        msg: "this is the style i want in sex {{animal}} after sex i want {{icecream}} in {{swiggy}}"
+        msg: "I love {{sahar}} and like the {{rita}} and wants {{ramya}}"
