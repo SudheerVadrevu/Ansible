@@ -10,4 +10,4 @@
   tasks:
     - name: Play-2 task
       ansible.builtin.debug:
-      msg: "this is second task level message"
+        msg: "this is second task level message"
