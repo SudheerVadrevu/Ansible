@@ -1,13 +1,15 @@
-- name: Play-1 Task
+- name: give the variables man
   hosts: linuxserver
-  tasks:
-    - name: play-1 task
-      ansible.builtin.debug:
-        msg: "This is an task level message"
+  vars:
+    sudheer: okavadhava
+    vinni: oka mallokam
+    ravi: waste vedhava
 
-- name: playlevel-2 Task
-  hosts: linuxserver
   tasks:
-    - name: Play-2 task
+    - name: see the values for given in vars
       ansible.builtin.debug:
-        msg: "this is second task level message"
+        msg: "the {{sudheer}} and {{vinni}} kalisi {{ravi}} gadi dagaraki vellaru"
+        
+    
+
+
