@@ -7,12 +7,12 @@
   tasks:  
     - name: number is greater than 10
       ansible.builtin.debug:
-       msg: "what was the number you have given {{username}}"
+       msg: "number you have given is greater than {{username}} "
       when: username | int > 10
 
     - name: number is less than 10
       ansible.builtin.debug:
-        msg: "what was the number you have given {{username}}"
+        msg: "the number you have given is less than {{username}}"
       when: username | int <= 10
 
     
