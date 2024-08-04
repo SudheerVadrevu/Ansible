@@ -12,7 +12,7 @@
       msg: "The error info was showed in {{SUDH}}"
   
   - name: condition is applying
-    ansible.bulitin.command: useradd sudheer
+    ansible.builtin.command: useradd sudheer
     when: SUDH.rc != 0 #condition
 
   - name: All of them
