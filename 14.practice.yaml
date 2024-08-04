@@ -2,8 +2,8 @@
   hosts: linuxserver
   become: yes
   tasks:
-    - name: for conditions
-      ansible.builtin.command: id euros
-      #ignore_errors: true
+  - name: for conditions
+    ansible.builtin.command: id sudheer
+    ignore_errors: true
 
     
