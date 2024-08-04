@@ -1,18 +1,8 @@
 - name: conditions alago chudam
   hosts: linuxserver
-  vars_prompt:
-    - name: username
-      prompt: please enter the username
-      private: false
-  tasks:  
-    - name: number is greater than 10
+  tasks:
+    - name: pichi variable
       ansible.builtin.debug:
-       msg: "number you have given is greater than 10: {{username}} "
-      when: username | int > 10
-
-    - name: number is less than 10
-      ansible.builtin.debug:
-        msg: "the number you have given is less than 10: {{username}}"
-      when: username | int <= 10
+        msg: "the variable name is {{sudheer | default('sexyboy') }}"
 
     
