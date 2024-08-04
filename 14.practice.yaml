@@ -10,5 +10,6 @@
   vars:
     sulakaya: "sindhu ni sex chestha ra"
   tasks:
+    - name: let's convert into uppercase now
       ansible.builtin.debug:
         msg: "this is what we want {{ sulakaya | upper }}"
