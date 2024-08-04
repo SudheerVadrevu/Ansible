@@ -1,7 +1,6 @@
 - name: condition will be seen in this file
   hosts: linuxserver
   become: yes
-
   tasks:
   - name: Ippudu modhalavutundhi
     ansible.builtin command: id vinni
