@@ -1,8 +1,8 @@
 - name: conditions alago chudam
   hosts: linuxserver
   tasks:
-    - name: pichi variable
+    - name: sudheer
       ansible.builtin.debug:
-        msg: "the variable name is {{sudheer | default('sexyboy') }}"
+        msg: "the variable name is the {{ sexyboy | default('sindu ni sex chestha') }}"
 
     
