@@ -4,6 +4,11 @@
   tasks:
   - name: for conditions
     ansible.builtin.command: id sudheer
+    register: SUDH
     ignore_errors: true
 
+  - name: All of them
+    ansible.builtin.debug:
+      msg: "come on massage me"
+      
     
