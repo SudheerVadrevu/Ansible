@@ -3,11 +3,11 @@
   become: yes
 
   tasks:
-    - name: Ippudu modhalavutundhi
+  - name: Ippudu modhalavutundhi
       ansible.builtin command: id vinni
       ignore_errors: true
 
-    - name: just message after ignoring
+  - name: just message after ignoring
       ansible.builtin.debug:
         msg: "Hello ra sudheer"
     
