@@ -1,6 +1,6 @@
-- name: inventory lo ichina variables ala work avuthayo chudam
+- name: call the variables as arguments
   hosts: linuxserver
   tasks:
-    - name: ippudu ikkada variable ni declare chesthunam
+    - name: this is for to give the varibles as args in runtime
       ansible.builtin.debug:
-        msg: "this is how we call {{devi1}} and sister {{devi2}} that's it {{devi3}}"
+        msg: "this is the first variable {{vinni}} and second variable {{sidhu}}"
