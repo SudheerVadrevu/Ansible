@@ -4,10 +4,10 @@
 
   tasks:
   - name: Ippudu modhalavutundhi
-      ansible.builtin command: id vinni
+    ansible.builtin command: id vinni
       ignore_errors: true
 
   - name: just message after ignoring
-      ansible.builtin.debug:
-        msg: "Hello ra sudheer"
+    ansible.builtin.debug:
+      msg: "Hello ra sudheer"
     
