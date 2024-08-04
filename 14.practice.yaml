@@ -8,11 +8,11 @@
     - name: number is greater than 10
       ansible.builtin.debug:
        msg: "what was the number you have given {{username}}"
-      when: username > 10
+      when: username | int > 10
 
     - name: number is less than 10
       ansible.builtin.debug:
         msg: "what was the number you have given {{username}}"
-      when: username < 10
+      when: username | int <= 10
 
     
