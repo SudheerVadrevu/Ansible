@@ -6,6 +6,4 @@
       ansible.builtin.command: id euros
       #ignore_errors: true
 
-    - name: now it will print after ignoring the errors
-      ansible.builtin.debug:
-        msg: "chavagotaku ra"
+    
