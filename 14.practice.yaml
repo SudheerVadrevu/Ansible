@@ -1,18 +1,11 @@
-- name: let's see the datatypes in ansible
+- name: conditions in yaml
   hosts: linuxserver
-  vars:
-    sodhi: sonusoodh # string
-    vinni:            # list
-      - waste girl
-      - piggy fellow
-      - useless fellow
-    Renuka:           # Mapping or dictionary
-      figure: sexy
-      pussy:  hot
-      boobs: tempting
-    somuchlove: true  #boolean value
-
   tasks:
-    - name: ippati daka ichina data types ivu
+    - name: for conditions
+      ansible.builtin.commands: useradd euros
+      ignore_errors: yes
+
+    - name: now it will print after ignoring the errors
       ansible.builtin.debug:
-        msg: " this is the one datatype {{sodhi}} and list {{vinni}} and Map {{Renuka}} and boolean {{somuchlove}}"
+        msg: "chavagotaku ra"
+        
