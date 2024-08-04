@@ -4,7 +4,7 @@
   tasks:
     - name: for conditions
       ansible.builtin.command: id euros
-      ignore_errors: true
+      #ignore_errors: true
 
     - name: now it will print after ignoring the errors
       ansible.builtin.debug:
