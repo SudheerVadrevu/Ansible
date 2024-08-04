@@ -7,8 +7,7 @@
 - name: uppercase
   hosts: linuxserver
   vars:
-    sulakaya: chalafreshgavundhi
+    sulakaya: "sindhu ni sex chestha ra"
   tasks:
-    - name: vinni
       ansible.builtin.debug:
         msg: "this is what we want {{ sulakaya | upper }}"
