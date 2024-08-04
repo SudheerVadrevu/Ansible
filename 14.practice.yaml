@@ -1,6 +1,18 @@
-- name: call the variables as arguments
+- name: let's see the datatypes in ansible
   hosts: linuxserver
+  vars:
+    sodhi: sonusoodh # string
+    vinni:            # list
+      - waste girl
+      - piggy fellow
+      - useless fellow
+    Renuka:           # Mapping or dictionary
+      figure: sexy
+      pussy:  hot
+      boobs: tempting
+    somuchlove: true  #boolean value
+
   tasks:
-    - name: this is for to give the varibles as args in runtime
+    - name: ippati daka ichina data types ivu
       ansible.builtin.debug:
-        msg: "this is the first variable {{vinni}} and second variable {{sidhu}}"
+        msg: " this is the one datatype {{sodhi}} and list {{vinni}} and Map {{Renuka}} and boolean {{somuchlove}}"
