@@ -4,7 +4,12 @@
   tasks:
   - name: Ippudu modhalavutundhi
     ansible.builtin.command: id vinni
+    register: sexy
     ignore_errors: true
+
+  - name: applying the conditions
+    ansible.builtin.command: useradd vinni
+    when: sexy.rc != 0 #condition
 
   - name: just message after ignoring
     ansible.builtin.debug:
