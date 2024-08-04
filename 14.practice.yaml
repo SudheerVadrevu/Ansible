@@ -4,5 +4,11 @@
     - name: sudheer
       ansible.builtin.debug:
         msg: "the variable name is the {{ sexyboy | default('sindu ni sex chestha') }}"
-
-    
+- name: uppercase
+  hosts: linuxserver
+  vars:
+    sulakaya: chalafreshgavundhi
+  tasks:
+    - name: vinni
+      ansible.builtin.debug:
+        msg: "this is what we want {{ sulakaya | upper }}"
