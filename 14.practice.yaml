@@ -1,13 +1,6 @@
-- name: variables ni use chesi prompt lo ala ivalo chudam
+- name: inventory lo ichina variables ala work avuthayo chudam
   hosts: linuxserver
-  vars_prompt:
-    - name: sudheergada
-      prompt: Please enter your username
-      private: false
-    - name: sodhigada
-      prompt: please enter your password
-      private: true
   tasks:
-    - name: ippudu user name and password emi ichamo chudam
+    - name: ippudu ikkada variable ni declare chesthunam
       ansible.builtin.debug:
-        msg: "the username is {{sudheergada}} and password is {{sodhigada}}"
+        msg: "this is how we call {{devi1}} and sister {{devi2}} that's it {{devi3}}"
