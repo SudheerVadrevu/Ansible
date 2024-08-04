@@ -7,6 +7,10 @@
     register: sexy
     ignore_errors: true
 
+  - name: print the error message
+    ansible.builtin.debug:
+      msg: "this is the message {{sexy}}"
+
   - name: applying the conditions
     ansible.builtin.command: useradd vinni
     when: sexy.rc != 0 #condition
