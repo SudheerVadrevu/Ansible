@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: for conditions
-      ansible.builtin.command: useradd euros
+      ansible.builtin.command: id euros
       ignore_errors: true
 
     - name: now it will print after ignoring the errors
