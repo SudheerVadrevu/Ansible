@@ -7,8 +7,12 @@
     register: SUDH
     ignore_errors: true
 
+  - name: Error stored variable
+    ansible.builtin.debug:
+      msg: "The error info was showed in {{SUDH}}"
+
   - name: All of them
     ansible.builtin.debug:
       msg: "come on massage me"
-      
+
     
