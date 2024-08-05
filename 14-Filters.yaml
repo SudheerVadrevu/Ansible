@@ -41,4 +41,19 @@
       ansible.builtin.debug:
         msg: " Max is {{ marks| max }} min is {{ marks| min }}"
 
+- name: convert dictionary or map to items or list
+  hosts: linuxserver
+  vars:
+    bags:
+      handbag: daily usuage
+      wallet: money usuage
+      lunchbag: food usuage
+  tasks:
+    - name: dict2items
+      ansible.builtin.debug:
+        msg: "the plane dictionary is {{bags}}"
+    
+    - name: convert dict2items
+      anisble.builtin.debug:
+        msg: "after converting {{bags | dict2items}}"
 
