@@ -8,9 +8,28 @@
 - name: Uppercase
   hosts: linuxserver
   vars:
-    sindhu: "Have sexy boobs"
+    sudheer: "Have intelligence "
   tasks:
     - name: start shows in upper case
       ansible.builtin.debug:
-        msg: "{{ sindhu | upper}} "
+        msg: "{{ sudheer | upper}} "
+
+- name: Lower case
+  hosts: linuxserver
+  vars:
+    sudheer: "HE IS LAZYBOY"
+  tasks:
+    - name: Now convert into capital to small
+      ansible.builtin.debug:
+        msg: "{{sudheer | lower}}"
+
+- name: remove duplicates
+  hosts: linuxserver
+  vars:
+    iconic: [ 2,22,32,44,2,34,22,56,78,90,56]
+  tasks:
+    - name: all to remove this duplicates
+      ansible.builtin.debug:
+        msg: "{{iconic | unique }} "
+
 
