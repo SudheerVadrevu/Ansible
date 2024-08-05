@@ -6,7 +6,7 @@
      ansible.dnf.install:
       name: " {{ item }} "
       state: started
-    loop:
-    - mysql
-    - nginx
-    - git
+     loop:
+     - mysql
+     - nginx
+     - git
