@@ -38,7 +38,7 @@
     marks: [22,48,56,99,120,140,6,59,270,89]
   tasks:
     - name: maximum and minimum
-      ansibie.builtin.debug:
+      ansible.builtin.debug:
         msg: " Max is {{ marks| max }} min is {{ marks| min }}"
 
 
