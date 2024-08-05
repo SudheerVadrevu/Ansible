@@ -54,6 +54,6 @@
         msg: "the plane dictionary is {{bags}}"
     
     - name: convert dict2items
-      anisble.builtin.debug:
+      ansible.builtin.debug:
         msg: "after converting {{bags | dict2items}}"
 
