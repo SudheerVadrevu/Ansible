@@ -5,7 +5,7 @@
    - name: chudam
      ansible.builtin.dnf:
       name: " {{ item }} "
-      state: started
+      state: latest
      loop:
      - mysql
      - nginx
