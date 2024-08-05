@@ -71,6 +71,6 @@
 
     - name: it is an list convert dictionary
       ansible.builtin.debug:
-        msg: "{{mylaugh | items2dict}}"
+        msg: "{{ mylaugh | items2dict }}"
 
 
