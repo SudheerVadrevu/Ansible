@@ -3,7 +3,7 @@
   become: yes
   tasks:
    - name: chudam
-     ansible.dnf.install:
+     ansible.builtin.dnf:
       name: " {{ item }} "
       state: started
      loop:
