@@ -61,9 +61,9 @@
   hosts: linuxserver
   vars:
     mylaugh:
-    - {'key': 'handbag', 'value': 'daily usuage'}
-    - {'key': 'wallet', 'value': 'money usuage'}
-    - {'key': 'lunchbag', 'value': 'food usuage'}
+    - {'key': 'handbag', 'value': 'dailyusuage'}
+    - {'key': 'wallet', 'value': 'moneyusuage'}
+    - {'key': 'lunchbag', 'value': 'foodusuage'}
   tasks:
     - name: see the list
       ansible.builtin.debug:
