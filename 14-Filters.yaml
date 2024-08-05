@@ -4,3 +4,13 @@
     - name: filters
       ansible.builtin.debug:
         msg: "the variable is used in the run time {{ sudheer | default (' goodboy ') }}"
+
+- name: Uppercase
+  hosts: linuxserver
+  vars:
+    sindhu: "Have sexy boobs"
+  tasks:
+    - name: start shows in upper case
+      ansible.builtin.debug:
+        msg: "{{ sindhu | upper}} "
+
