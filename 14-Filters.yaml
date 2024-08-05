@@ -60,17 +60,17 @@
 - name: convert list to dictionary
   hosts: linuxserver
   vars:
-    my laugh:
+    mylaugh:
     - {'key': 'handbag', 'value': 'daily usuage'}
     - {'key': 'wallet', 'value': 'money usuage'}
     - {'key': 'lunchbag', 'value': 'food usuage'}
   tasks:
     - name: see the list
       ansible.builtin.debug:
-        msg: "let show first how it looks {{my laugh}}"
+        msg: "let show first how it looks {{mylaugh}}"
 
     - name: it is an list convert dictionary
       ansible.builtin.debug:
-        msg: "{{my laugh | items2dict}}"
+        msg: "{{mylaugh | items2dict}}"
 
 
