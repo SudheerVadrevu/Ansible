@@ -2,5 +2,5 @@
   hosts: linuxserver
   tasks:
     - name: filters
-      anisble.builtin.debug:
+      ansible.builtin.debug:
         msg: "the variable is used in the run time {{ sudheer | default (' koja ') }}"
