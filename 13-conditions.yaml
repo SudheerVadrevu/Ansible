@@ -1,0 +1,16 @@
+- name: conditions chudam
+  hosts: linuxserver
+  vars_prompt:
+    - name: Turkey
+      prompt: Please enter the number
+      private: no
+  tasks:
+    - name: check the given no. whether they are greater than
+      ansible.builtin.debug:
+        msg: "this is an number : {{Turkey}} is greater than 30"
+      when: Turkey > 30
+
+    - name: check the given no. whether they are less than
+      ansible.builtin.debug:
+        msg: "the number we given :{{Turkey}} is less than 30"
+      when: Turkey <= 30
