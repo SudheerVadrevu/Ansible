@@ -1,0 +1,12 @@
+- name: secondloop
+  hosts: linuxserver
+  become: yes
+  tasks:
+   - name: chudam
+     ansible.dnf.install:
+      name: " {{ item }} "
+      state: started
+    loop:
+    - mysql
+    - nginx
+    - git
