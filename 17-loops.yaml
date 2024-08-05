@@ -1,5 +1,6 @@
 - name: another loops
   hosts: linuxserver
+  become: yes
   tasks: 
     - name: some install some needs to be absent
       ansible.builtin.dnf:
